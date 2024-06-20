@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator Suhu</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Website Konversi Suhu</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+    background-image: image-set('image.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    }
+    </style>
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Website Konversi Suhu</h1>
-    </header>
-    <main>
-        <section class="input-section">
-            <h2>Masukkan Suhu</h2>
-            <form>
-                <label for="temperature">Suhu (°C):</label>
-                <input type="number" id="temperature" name="temperature">
-                <button type="submit">Hitung</button>
-            </form>
-        </section>
-        <section class="result-section">
-            <h2>Hasil Konversi</h2>
-            <p id="result"></p>
-        </section>
-    </main>
-    <script src="script.js"></script>
+        <p>Masukkan Suhu Derajat Celcius (°C) ...</p>
+        <label for="celcius">Celcius (°C):</label>
+        <input type="number" id="celcius" placeholder="0">
+        <div class="buttons">
+            <button onclick="konversi()">Konversi</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="reverse()">Reverse</button>
+        </div>
+        <p>Fahrenheit (°F):</p>
+        <input type="text" id="fahrenheit" readonly>
+        <p>Covertion Calculate:</p>
+        <input type="text" id="covert-calculate" readonly>
+        <div class="conversion-method">
+            <h2>Cara Konversi Dari Celcius (°C) ke Fahrenhiet (°F)</h2>
+            <p>Suhu <span class="subject-info">S</span> dalam derajat Fahrenhiet (&deg;F) sama <span class="subject-info">S</span> dengan suhu dalam Celcius (&deg;C)</p>
+            <p><span class="subject-info">S</span><sub>(&deg;F)</sub> = (<span class="subject-info">S</span><sub>(&deg;C)</sub> x 9/5) + 32      
+            </p>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
