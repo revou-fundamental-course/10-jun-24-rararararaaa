@@ -5,8 +5,8 @@ function konversi() {
         return;
     }
     let fahrenheit = (celcius * 9/5) + 32;
-    document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
-    document.getElementById("covert-calculate").value = `${celcius} * (9/5) + 32 = ${fahrenheit.toFixed(2)}`;
+    document.getElementById("fahrenheit").value = fahrenheit.toFixed(1);
+    document.getElementById("covert-calculate").value = `${celcius} * (9/5) + 32 = ${fahrenheit.toFixed(1)}`;
 }
 
 function reset() {

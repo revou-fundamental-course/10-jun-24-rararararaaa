@@ -24,6 +24,22 @@ input {
 .buttons button {
     margin: 5px;
     padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button.konversi {
+    background-color: green;
+}
+
+.buttons button.reset {
+    background-color: red;
+}
+
+.buttons button.reverse {
+    background-color: darkblue;
 }
 
 .conversion-method {
